@@ -3,11 +3,5 @@ uvicorn
 pydantic
 pydantic-settings
 transformers==4.56.2
-pandas
-numpy
-scikit-learn
-scipy
-joblib
-python-dateutil
-six
-threadpoolctl
+onnxruntime
+numpy==1.26.4

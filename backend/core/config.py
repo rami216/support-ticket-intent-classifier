@@ -8,9 +8,9 @@ class Settings(BaseSettings):
     app_name: str = "Support Ticket Classifier API"
     app_version: str = "1.0.0"
 
-    # RNN
-    model_path: Path = Path(
-        "artifacts/models/best_rnn.pt"
+    # RNN ONNX
+    rnn_onnx_model_path: Path = Path(
+        "artifacts/rnn/onnx/rnn.onnx"
     )
     vocab_path: Path = Path(
         "artifacts/vocab/word_to_id.json"
@@ -22,11 +22,13 @@ class Settings(BaseSettings):
         "artifacts/config/label_to_id.json"
     )
 
-    # DistilBERT
-    distilbert_model_name: str = (
-        "ramishams216/support-ticket-distilbert"
+    # DistilBERT ONNX INT8
+    distilbert_onnx_model_path: Path = Path(
+        "artifacts/distilbert/onnx/model_quantized.onnx"
     )
-
+    distilbert_tokenizer_path: Path = Path(
+        "artifacts/distilbert/onnx"
+    )
     distilbert_label_mapping_path: Path = Path(
         "artifacts/distilbert/label_to_id.json"
     )

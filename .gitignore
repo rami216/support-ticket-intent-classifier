@@ -45,6 +45,6 @@ htmlcov/
 
 # Temporary archives
 *.zip
-
+artifacts/distilbert/onnx/model.onnx
 # Large model artifacts
 artifacts/distilbert/model/model.safetensors
