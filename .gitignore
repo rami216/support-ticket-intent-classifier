@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+.venv/
+nlp-pr-lr-venv/
+
+# Conda / local env artifacts
+.conda/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env*
+frontend/.vercel/
+
+# Logs
+*.log
+
+# Test / cache
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Temporary archives
+*.zip
+
+# Large model artifacts
+artifacts/models/*.pt
+artifacts/distilbert/model/model.safetensors
