@@ -47,5 +47,4 @@ htmlcov/
 *.zip
 
 # Large model artifacts
-artifacts/models/*.pt
 artifacts/distilbert/model/model.safetensors

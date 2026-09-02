@@ -23,9 +23,10 @@ class Settings(BaseSettings):
     )
 
     # DistilBERT
-    distilbert_model_dir: Path = Path(
-        "artifacts/distilbert/model"
+    distilbert_model_name: str = (
+        "ramishams216/support-ticket-distilbert"
     )
+
     distilbert_label_mapping_path: Path = Path(
         "artifacts/distilbert/label_to_id.json"
     )

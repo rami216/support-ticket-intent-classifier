@@ -41,7 +41,7 @@ async def lifespan(app: FastAPI):
     )
 
     distilbert_predictor = DistilBertPredictor(
-        model_dir=settings.distilbert_model_dir,
+        model_dir=settings.distilbert_model_name,
         label_mapping_path=(
             settings.distilbert_label_mapping_path
         ),
