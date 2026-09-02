@@ -2,10 +2,7 @@ fastapi
 uvicorn
 pydantic
 pydantic-settings
-
-torch
 transformers==4.56.2
-
 pandas
 numpy
 scikit-learn
